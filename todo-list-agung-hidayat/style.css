@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  min-width: 250px;
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 700px;
+  margin: 3% auto;
+  padding: 2%;
+  border-radius: 18px;
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.37);
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: rgb(238, 238, 238);
+  color: black;
+  font-size: 18px;
+  transition: 0.2s;
+  text-decoration: none;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#myUL {
+  padding: 20px;
+}
+
+#myUL > li {
+  border-radius: 11px;
+  margin: 8px 0;
+}
+
+#myUL > li {
+  border-radius: 15px;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+/* ul li:nth-child(odd) {
+  background: #f9f9f9;
+} */
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: rgb(168, 168, 168);
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 4px;
+  padding: 8px 12px 8px 12px;
+  border-radius: 11px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  /* background-color: #f44336; */
+  padding: 30px 18px;
+  /* color: white; */
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 73%;
+  padding: 11px;
+  float: left;
+  font-size: 16px;
+  background: rgb(235, 235, 235);
+  border-radius: 5px;
+  margin-right: 1%;
+  transition: 0.2s;
+}
+
+input:focus-visible {
+  outline-color: rgb(126, 126, 126);
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #cccccc;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.addBtn:hover {
+  background-color: rgb(161, 161, 161);
+}
