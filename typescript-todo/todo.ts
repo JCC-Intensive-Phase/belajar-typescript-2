@@ -59,22 +59,6 @@ class TodoModel extends TaskModel implements TodoModelMethods {
     console.log(this.getAllTask());
   }
 
-  // removeTask(id: number) {
-  //   let list = document.getElementById('todo-list');
-  //   let filter = this.todos.filter((i) => i.id !== id);
-  //   list?.removeChild(this.removeTaskFromList(id)!);
-  // }
-
-  // updateTask(id: number, task: Task) {
-  //   this.todos = this.todos.map((todo) => {
-  //     if (todo.id === id) {
-  //       return task;
-  //     }
-  //     return todo;
-  //   });
-  // }
-  
-
   submitButton() {
     const input = document.getElementById('input') as HTMLInputElement;
     const task = input.value;
@@ -96,20 +80,4 @@ class TodoModel extends TaskModel implements TodoModelMethods {
 }
 
 const todo = new TodoModel({ id: 0, name: 'Learn TypeScript 1', completed: true });
-// todo.newTask = { id: 2, name: 'Learn TypeScript 1', completed: true };
-// todo.newTask = { id: 3, name: 'Learn TypeScript 2', completed: true };
-// todo.newTask = { id: 4, name: 'Learn TypeScript 3', completed: false };
 console.log('all task:', todo.getAllTask());
-// todo.removeTask(2);
-// console.log('task after delete: ', todo.getAllTask());
-// todo.updateTask(3, { id: 3, name: 'Learn TypeScript 6', completed: true });
-// console.log('task after update: ', todo.getAllTask());
-
-// const addTodo = () => {
-//   const input = document.querySelector('#todo-input');
-//   console.log(input);
-//   // const todo = new TodoModel({ id: 5, name: input.value, completed: false });
-//   // const task = { id: 5, name: 'Learn TypeScript 4', completed: false };
-//   // todo.newTask = task;
-//   // console.log('task after add: ', todo.getAllTask());
-// };
