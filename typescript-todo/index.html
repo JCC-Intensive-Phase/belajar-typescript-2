@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript - Todo List</title>
+    <style>
+      html,
+      body {
+        margin: 10px 10px;
+      }
+
+      li {
+        cursor: not-allowed;
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Todo List</h1>
+    <input name="todo" id="input" placeholder="write todo" />
+    <ul id="todo-list" onclick="remove()"></ul>
+    <button onclick="todo.submitButton()">Add Todo</button>
+  </body>
+  <script>var exports = {};</script>
+
+  <script src="todo.js"></script>
+  <script>
+    function getEventTarget(e) {
+      e = e ?? window.event;
+      return e.target ?? e.srcElement;
+    }
+    function remove() {
+      let updated = document.getElementById("todo-list");
+      updated.onclick = function (event) {
+        const target = getEventTarget(event);
+        todo.removeTaskFromList(parseInt(target.id - 1));
+      };
+    }
+  </script>
+
+</html>
