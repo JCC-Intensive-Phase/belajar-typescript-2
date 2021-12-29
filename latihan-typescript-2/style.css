@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: lightslategray;
+    padding: 30px;
+}
+
+.title {
+    color: lightcoral;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+main {
+    margin: 10px 0px;
+
+}
+
+label {
+    font-size: 20px;
+}
+
+.inputan {
+    margin: 10px 20px;
+    padding: 20px;
+}
+
+.inputan input {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.inputan button {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.inputan span {
+    margin: 0 20px;
+}
