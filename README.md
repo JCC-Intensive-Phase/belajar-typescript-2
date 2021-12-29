@@ -1,1 +1,1 @@
-# belajar-typescript-2
+## [Fahmi Idris](https://fahmiidris.vercel.app) :yum:
